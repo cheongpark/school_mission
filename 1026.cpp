@@ -79,6 +79,7 @@ void print_2();
 void print_3();
 void print_4();
 void print_5();
+void print_bss();
 
 int main()
 {
@@ -95,24 +96,23 @@ int main()
 //	
 //	cout << sum[1] << " " << sum[0];	
 //	Sleep(100);
-	
+//	
 	while(1)
 	{
 		print_5();
-		Sleep(1000);
-		system("cls");
+		print_bss();
+		
 		print_4();
-		Sleep(1000);
-		system("cls");
+		print_bss();
+		
 		print_3();
-		Sleep(1000);
-		system("cls");
+		print_bss();
+		
 		print_2();
-		Sleep(1000);
-		system("cls");
+		print_bss();
+		
 		print_1();
-		Sleep(1000);
-		system("cls");
+		print_bss();
 	}
 }
 
@@ -204,4 +204,11 @@ void print_5()
 		}
 		printf("\n");
 	}
+}
+
+void print_bss()
+{
+	Beep(360, 500);
+	Sleep(1000);
+	system("cls");
 }
