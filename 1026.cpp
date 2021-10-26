@@ -217,10 +217,10 @@ void print_bss()
 
 void print_num_0()
 {
-	cout << "/";
+	cout << "○";
 }
 
 void print_num_1()
 {
-	cout << "*";
+	cout << "●";
 }
