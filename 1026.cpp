@@ -80,6 +80,8 @@ void print_3();
 void print_4();
 void print_5();
 void print_bss();
+void print_num_0();
+void print_num_1();
 
 int main()
 {
@@ -123,9 +125,9 @@ void print_0()
 		for(int j=0;j<8;j++)
 		{
 			if(_0[i][j] == 0)
-				cout << "□";
+				print_num_0();
 			else
-				cout << "■";	
+				print_num_1();
 		}
 		printf("\n");
 	}
@@ -138,9 +140,9 @@ void print_1()
 		for(int j=0;j<8;j++)
 		{
 			if(_1[i][j] == 0)
-				cout << "□";
+				print_num_0();
 			else
-				cout << "■";	
+				print_num_1();
 		}
 		printf("\n");
 	}
@@ -153,9 +155,9 @@ void print_2()
 		for(int j=0;j<8;j++)
 		{
 			if(_2[i][j] == 0)
-				cout << "□";
+				print_num_0();
 			else
-				cout << "■";	
+				print_num_1();
 		}
 		printf("\n");
 	}
@@ -168,9 +170,9 @@ void print_3()
 		for(int j=0;j<8;j++)
 		{
 			if(_3[i][j] == 0)
-				cout << "□";
+				print_num_0();
 			else
-				cout << "■";	
+				print_num_1();	
 		}
 		printf("\n");
 	}
@@ -183,9 +185,9 @@ void print_4()
 		for(int j=0;j<8;j++)
 		{
 			if(_4[i][j] == 0)
-				cout << "□";
+				print_num_0();
 			else
-				cout << "■";	
+				print_num_1();
 		}
 		printf("\n");
 	}
@@ -198,9 +200,9 @@ void print_5()
 		for(int j=0;j<8;j++)
 		{
 			if(_5[i][j] == 0)
-				cout << "□";
+				print_num_0();
 			else
-				cout << "■";	
+				print_num_1();
 		}
 		printf("\n");
 	}
@@ -211,4 +213,14 @@ void print_bss()
 	Beep(360, 500);
 	Sleep(1000);
 	system("cls");
+}
+
+void print_num_0()
+{
+	cout << "/";
+}
+
+void print_num_1()
+{
+	cout << "*";
 }
